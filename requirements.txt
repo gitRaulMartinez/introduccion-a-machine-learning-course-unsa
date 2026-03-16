@@ -4,3 +4,5 @@ matplotlib
 seaborn
 scipy
 jupyter
+kmodes
+scikit-learn\nxgboost\nimbalanced-learn
