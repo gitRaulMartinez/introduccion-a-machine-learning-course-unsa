@@ -446,9 +446,8 @@ machine-learning/
 ├── data/
 │   ├── raw/                          # Datos originales
 │   └── processed/                    # Datos limpios
-│       └── rita/
-│           ├── rita_limpio.csv        # Dataset limpio (82,106 registros)
-│           └── rita-2012-2022.xlsx    # Fuente original
+│       ├── rita_limpio.csv           # Dataset limpio (82,106 registros)
+│       └── rita-2012-2022.xlsx    # Fuente original
 ├── notebooks/
 │   ├── 01_preprocesado_limpieza.ipynb
 │   ├── 02_eda_estadistica.ipynb
@@ -484,4 +483,4 @@ El proyecto sigue la metodologia CRISP-DM (Cross-Industry Standard Process for D
 
 ---
 
-*Proyecto desarrollado para la materia de Machine Learning - Universidad Nacional de San Agustin (UNSA)*
+*Proyecto desarrollado para la materia de Machine Learning - Universidad Nacional de Salta (UNSA)*
