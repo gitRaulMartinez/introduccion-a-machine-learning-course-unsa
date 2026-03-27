@@ -4,12 +4,13 @@ Este repositorio contiene la estructura base para un análisis estadístico y mo
 
 ## Estructura del Proyecto
 
-- `data/`: Datos crudos (`raw/`) y procesados (`processed/`).
-- `notebooks/`: Análisis exploratorio de datos (EDA) y experimentos iniciales.
-- `src/`: Código fuente modular (limpieza de datos, funciones estadísticas, etc.).
-- `models/`: Archivos de modelos entrenados (ej: .pkl, .h5).
-- `reports/`: Resultados del análisis y visualizaciones (`figures/`).
-- `GEMINI.md`: Guía de prompts y mandatos para trabajar conmigo.
+- `data/raw/rita/` y `data/raw/students/`: datos originales por dataset.
+- `data/processed/rita/` y `data/processed/students/`: datos procesados por dataset.
+- `notebooks/rita/` y `notebooks/students/`: notebooks separados por proyecto.
+- `reports/rita/` y `reports/students/`: reportes y figuras separados por proyecto.
+- `models/rita/` y `models/students/`: modelos entrenados por dataset.
+- `src/`: código fuente modular reutilizable.
+- `GEMINI.md`: guía de prompts y mandatos para trabajar conmigo.
 
 ## Primeros Pasos Recomendados
 

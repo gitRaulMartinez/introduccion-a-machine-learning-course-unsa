@@ -1,0 +1,209 @@
+{
+  "eda": {
+    "shape": {
+      "rows": 1194,
+      "cols": 31
+    },
+    "missing_total": 2,
+    "sexo_distribucion": {
+      "Male": 672,
+      "Female": 522
+    },
+    "probation_distribucion": {
+      "No": 896,
+      "Yes": 298
+    },
+    "edad": {
+      "media": 21.343383584589613,
+      "mediana": 21.0,
+      "desv_std": 1.6133383491797362
+    },
+    "cgpa_actual": {
+      "media": 3.1656030150753764,
+      "mediana": 3.21,
+      "desv_std": 0.7501318217929044
+    }
+  },
+  "no_supervisado": {
+    "features": [
+      "sexo",
+      "programa",
+      "modo_aprendizaje_preferido",
+      "nivel_ingles",
+      "habilidades_principales",
+      "area_interes",
+      "convivencia",
+      "alguna_vez_probation"
+    ],
+    "k_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "costos": [
+      3439.0,
+      2867.0,
+      2641.0,
+      2456.0,
+      2236.0,
+      2241.0,
+      2179.0,
+      1992.0
+    ],
+    "k_optimo": 4,
+    "costo_final": 2438.0,
+    "tamano_clusters": {
+      "0": 388,
+      "1": 443,
+      "2": 200,
+      "3": 163
+    },
+    "centroides": [
+      {
+        "cluster": 0,
+        "sexo": "Male",
+        "programa": "BCSE",
+        "modo_aprendizaje_preferido": "Online",
+        "nivel_ingles": "Intermediate",
+        "habilidades_principales": "Programming",
+        "area_interes": "Software",
+        "convivencia": "Bachelor",
+        "alguna_vez_probation": "No"
+      },
+      {
+        "cluster": 1,
+        "sexo": "Female",
+        "programa": "BCSE",
+        "modo_aprendizaje_preferido": "Offline",
+        "nivel_ingles": "Intermediate",
+        "habilidades_principales": "Programming",
+        "area_interes": "Software",
+        "convivencia": "Family",
+        "alguna_vez_probation": "No"
+      },
+      {
+        "cluster": 2,
+        "sexo": "Male",
+        "programa": "BCSE",
+        "modo_aprendizaje_preferido": "Offline",
+        "nivel_ingles": "Intermediate",
+        "habilidades_principales": "Programming",
+        "area_interes": "Software",
+        "convivencia": "Family",
+        "alguna_vez_probation": "No"
+      },
+      {
+        "cluster": 3,
+        "sexo": "Male",
+        "programa": "BCSE",
+        "modo_aprendizaje_preferido": "Offline",
+        "nivel_ingles": "Basic",
+        "habilidades_principales": "Programming",
+        "area_interes": "Software",
+        "convivencia": "Bachelor",
+        "alguna_vez_probation": "No"
+      }
+    ]
+  },
+  "supervisado": {
+    "target": "alguna_vez_probation",
+    "distribucion_clases": {
+      "0": 896,
+      "1": 298
+    },
+    "modelos": {
+      "RandomForest": {
+        "accuracy": 0.803347280334728,
+        "precision": 0.7096774193548387,
+        "recall": 0.36666666666666664,
+        "f1": 0.4835164835164835,
+        "matriz_confusion": [
+          [
+            170,
+            9
+          ],
+          [
+            38,
+            22
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.8173076923076923,
+            "recall": 0.9497206703910615,
+            "f1-score": 0.8785529715762274,
+            "support": 179.0
+          },
+          "1": {
+            "precision": 0.7096774193548387,
+            "recall": 0.36666666666666664,
+            "f1-score": 0.4835164835164835,
+            "support": 60.0
+          },
+          "accuracy": 0.803347280334728,
+          "macro avg": {
+            "precision": 0.7634925558312655,
+            "recall": 0.6581936685288641,
+            "f1-score": 0.6810347275463554,
+            "support": 239.0
+          },
+          "weighted avg": {
+            "precision": 0.7902875401019551,
+            "recall": 0.803347280334728,
+            "f1-score": 0.779380631477547,
+            "support": 239.0
+          }
+        }
+      },
+      "XGBoost": {
+        "accuracy": 0.8326359832635983,
+        "precision": 0.7272727272727273,
+        "recall": 0.5333333333333333,
+        "f1": 0.6153846153846154,
+        "matriz_confusion": [
+          [
+            167,
+            12
+          ],
+          [
+            28,
+            32
+          ]
+        ],
+        "classification_report": {
+          "0": {
+            "precision": 0.8564102564102564,
+            "recall": 0.9329608938547486,
+            "f1-score": 0.893048128342246,
+            "support": 179.0
+          },
+          "1": {
+            "precision": 0.7272727272727273,
+            "recall": 0.5333333333333333,
+            "f1-score": 0.6153846153846154,
+            "support": 60.0
+          },
+          "accuracy": 0.8326359832635983,
+          "macro avg": {
+            "precision": 0.7918414918414918,
+            "recall": 0.7331471135940409,
+            "f1-score": 0.7542163718634307,
+            "support": 239.0
+          },
+          "weighted avg": {
+            "precision": 0.8239907930284499,
+            "recall": 0.8326359832635983,
+            "f1-score": 0.8233418070976525,
+            "support": 239.0
+          }
+        }
+      }
+    },
+    "mejor_modelo_f1": "XGBoost"
+  }
+}

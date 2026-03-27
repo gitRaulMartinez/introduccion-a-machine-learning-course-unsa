@@ -1,0 +1,287 @@
+{
+  "dataset_rows_used": 82106,
+  "sample_rows_for_geometry": 12000,
+  "features": [
+    "PTESXN",
+    "TOPOGRAFÍA_N",
+    "MORFOLOGÍA_N",
+    "EDAD_RANGO"
+  ],
+  "k_results": {
+    "4": {
+      "cost": 147993.0,
+      "sizes": {
+        "0": 23806,
+        "1": 19656,
+        "2": 22167,
+        "3": 16477
+      },
+      "centroids": [
+        {
+          "cluster": 0,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C62.9)-Testículo, SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto Mayor"
+        },
+        {
+          "cluster": 1,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C53.9)-Cuello uterino",
+          "MORFOLOGÍA_N": "(8070)-Carcinoma escamoso",
+          "EDAD_RANGO": "Adulto Joven"
+        },
+        {
+          "cluster": 2,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C50.9)-Mama, SAI",
+          "MORFOLOGÍA_N": "(8500)-Carcinoma ductal infiltrante, SAI (C50._)",
+          "EDAD_RANGO": "Adulto"
+        },
+        {
+          "cluster": 3,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C34.9)-Pulmón, SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto"
+        }
+      ]
+    },
+    "5": {
+      "cost": 142062.0,
+      "sizes": {
+        "0": 29311,
+        "1": 17999,
+        "2": 10960,
+        "3": 10916,
+        "4": 12920
+      },
+      "centroids": [
+        {
+          "cluster": 0,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C50.9)-Mama, SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto"
+        },
+        {
+          "cluster": 1,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C62.9)-Testículo, SAI",
+          "MORFOLOGÍA_N": "(8010)-Carcinoma, SAI",
+          "EDAD_RANGO": "Adulto"
+        },
+        {
+          "cluster": 2,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C61.9)-Próstata. SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto Mayor"
+        },
+        {
+          "cluster": 3,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C50.9)-Mama, SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto Mayor"
+        },
+        {
+          "cluster": 4,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C53.9)-Cuello uterino",
+          "MORFOLOGÍA_N": "(8077)-Neoplasia intraepitelial cervical. grado III (C53.-) NIC III. SAI (C53.-) (CIN III)NIC III con displasia aguda (c53)",
+          "EDAD_RANGO": "Adulto Joven"
+        }
+      ]
+    },
+    "6": {
+      "cost": 142928.0,
+      "sizes": {
+        "0": 33156,
+        "1": 16119,
+        "2": 12927,
+        "3": 10620,
+        "4": 7380,
+        "5": 1904
+      },
+      "centroids": [
+        {
+          "cluster": 0,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C50.9)-Mama, SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto"
+        },
+        {
+          "cluster": 1,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C62.9)-Testículo, SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto Mayor"
+        },
+        {
+          "cluster": 2,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C53.9)-Cuello uterino",
+          "MORFOLOGÍA_N": "(8077)-Neoplasia intraepitelial cervical. grado III (C53.-) NIC III. SAI (C53.-) (CIN III)NIC III con displasia aguda (c53)",
+          "EDAD_RANGO": "Adulto Joven"
+        },
+        {
+          "cluster": 3,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C64.9)-Riñón, SAI",
+          "MORFOLOGÍA_N": "(8010)-Carcinoma, SAI",
+          "EDAD_RANGO": "Adulto"
+        },
+        {
+          "cluster": 4,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C53.9)-Cuello uterino",
+          "MORFOLOGÍA_N": "(8070)-Carcinoma escamoso",
+          "EDAD_RANGO": "Adulto Mayor"
+        },
+        {
+          "cluster": 5,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C32.9)-Laringe, SAI",
+          "MORFOLOGÍA_N": "(8070)-Carcinoma escamoso",
+          "EDAD_RANGO": "Adulto"
+        }
+      ]
+    },
+    "7": {
+      "cost": 135263.0,
+      "sizes": {
+        "0": 16605,
+        "1": 17494,
+        "2": 21194,
+        "3": 10384,
+        "4": 2655,
+        "5": 11970,
+        "6": 1804
+      },
+      "centroids": [
+        {
+          "cluster": 0,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C50.9)-Mama, SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto Mayor"
+        },
+        {
+          "cluster": 1,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C50.9)-Mama, SAI",
+          "MORFOLOGÍA_N": "(8010)-Carcinoma, SAI",
+          "EDAD_RANGO": "Adulto"
+        },
+        {
+          "cluster": 2,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C62.9)-Testículo, SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto"
+        },
+        {
+          "cluster": 3,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C61.9)-Próstata. SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto Mayor"
+        },
+        {
+          "cluster": 4,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C50.4)-Cuadrante superior externo de la mama",
+          "MORFOLOGÍA_N": "(8500)-Carcinoma ductal infiltrante, SAI (C50._)",
+          "EDAD_RANGO": "Adulto"
+        },
+        {
+          "cluster": 5,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C53.9)-Cuello uterino",
+          "MORFOLOGÍA_N": "(8070)-Carcinoma escamoso",
+          "EDAD_RANGO": "Adulto Joven"
+        },
+        {
+          "cluster": 6,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C53.9)-Cérvix, SAI",
+          "MORFOLOGÍA_N": "(8070)-Carcinoma epidermoide, SAI",
+          "EDAD_RANGO": "Adulto"
+        }
+      ]
+    },
+    "8": {
+      "cost": 132441.0,
+      "sizes": {
+        "0": 16445,
+        "1": 18212,
+        "2": 15779,
+        "3": 7976,
+        "4": 9426,
+        "5": 4810,
+        "6": 2363,
+        "7": 7095
+      },
+      "centroids": [
+        {
+          "cluster": 0,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C50.9)-Mama, SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto Mayor"
+        },
+        {
+          "cluster": 1,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C62.9)-Testículo, SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto"
+        },
+        {
+          "cluster": 2,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C53.9)-Cuello uterino",
+          "MORFOLOGÍA_N": "(8070)-Carcinoma escamoso",
+          "EDAD_RANGO": "Adulto"
+        },
+        {
+          "cluster": 3,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C50.9)-Mama, SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto"
+        },
+        {
+          "cluster": 4,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C53.9)-Cuello uterino",
+          "MORFOLOGÍA_N": "(8010)-Carcinoma, SAI",
+          "EDAD_RANGO": "Adulto Joven"
+        },
+        {
+          "cluster": 5,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C61.9)-Próstata. SAI",
+          "MORFOLOGÍA_N": "(8140)-Adenocarcinoma, SAI",
+          "EDAD_RANGO": "Adulto Joven"
+        },
+        {
+          "cluster": 6,
+          "PTESXN": "Mujer",
+          "TOPOGRAFÍA_N": "(C53.9)-Cuello uterino",
+          "MORFOLOGÍA_N": "(8077)-Neoplasia intraepitelial cervical. grado III (C53.-) NIC III. SAI (C53.-) (CIN III)NIC III con displasia aguda (c53)",
+          "EDAD_RANGO": "Adulto Joven"
+        },
+        {
+          "cluster": 7,
+          "PTESXN": "Hombre",
+          "TOPOGRAFÍA_N": "(C61.9)-Próstata. SAI",
+          "MORFOLOGÍA_N": "(8070)-Carcinoma escamoso",
+          "EDAD_RANGO": "Adulto Mayor"
+        }
+      ]
+    }
+  }
+}

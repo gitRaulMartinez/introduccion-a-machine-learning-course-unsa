@@ -35,3 +35,6 @@
 ## Registro de Prompts Importantes
 - *Prompt de limpieza:* "Identifica y trata valores nulos y outliers en la columna edad usando IQR."
 - *Prompt de EDA:* "Genera visualizaciones univariadas y multivariadas para entender la distribución de diagnósticos por sexo y topografía."
+
+
+Aplicar heatmap
