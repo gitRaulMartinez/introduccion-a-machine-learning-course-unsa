@@ -245,8 +245,8 @@ def build_full_html(body_html, title="Informe Final de Proyecto y Defensa"):
             Aplicacion de Tecnicas de Machine Learning No Supervisado
         </div>
         <div class="info">
-            <p><strong>Materia:</strong> Machine Learning</p>
-            <p><strong>Universidad Nacional de San Agustin (UNSA)</strong></p>
+            <p><strong>Materia:</strong> Introducción a Machine Learning</p>
+            <p><strong>Universidad Nacional de Salta (UNSA)</strong></p>
         </div>
     </div>
     """

@@ -36,8 +36,8 @@ Para la correcta interpretacion de los resultados, es fundamental entender que s
 | **C50.9** | Mama, SAI | Cancer de mama sin especificar ubicacion exacta dentro de la mama |
 | **C50.4** | Cuadrante superior externo de la mama | Localizacion mas frecuente del cancer de mama (50% de los casos) |
 | **C53.9** | Cuello uterino (cervix) | Cancer cervical, asociado a VPH |
-| **C62.9** | Testiculo, SAI | Cancer testicular, mas frecuente en hombres de 15-45 anos |
-| **C61.9** | Prostata, SAI | Cancer de prostata, predominante en hombres >65 anos |
+| **C62.9** | Testiculo, SAI | Cancer testicular, mas frecuente en hombres de 15-45 años |
+| **C61.9** | Prostata, SAI | Cancer de prostata, predominante en hombres >65 años |
 | **C20.9** | Recto, SAI | Cancer rectal (parte del cancer colorrectal) |
 | **C18.9** | Colon, SAI | Cancer de colon (parte del cancer colorrectal) |
 | **C34.9** | Pulmon, SAI | Cancer de pulmon, asociado a tabaquismo |
@@ -72,10 +72,10 @@ Para la correcta interpretacion de los resultados, es fundamental entender que s
 | **3** | Mujer | Cuello uterino (C53.9) | NIC III (8077) | Adulto Joven | 12,920 (15.7%) |
 
 **Interpretacion clinica:**
-- **Cluster 0:** Mujeres mayores de 65 anos con cancer de mama. Perfil epidemiologico tipico: la incidencia de cancer de mama aumenta significativamente con la edad.
-- **Cluster 1:** Hombres adultos (45-65 anos). Aunque la moda es testiculo, este cluster agrupa TODA la poblacion masculina adulta, mezclando patologias muy diferentes (testiculo, pulmon, colon, prostata, etc.). Es el cluster mas heterogeneo.
-- **Cluster 2:** Mujeres adultas (45-65 anos) con cancer de mama. Se diferencia del cluster 0 unicamente por el rango de edad.
-- **Cluster 3:** Mujeres adultas jovenes (18-45 anos) con lesiones precancerosas cervicales (NIC III). Este grupo es critico para programas de deteccion temprana del cancer cervical.
+- **Cluster 0:** Mujeres mayores de 65 años con cancer de mama. Perfil epidemiologico tipico: la incidencia de cancer de mama aumenta significativamente con la edad.
+- **Cluster 1:** Hombres adultos (45-65 años). Aunque la moda es testiculo, este cluster agrupa TODA la poblacion masculina adulta, mezclando patologias muy diferentes (testiculo, pulmon, colon, prostata, etc.). Es el cluster mas heterogeneo.
+- **Cluster 2:** Mujeres adultas (45-65 años) con cancer de mama. Se diferencia del cluster 0 unicamente por el rango de edad.
+- **Cluster 3:** Mujeres adultas jovenes (18-45 años) con lesiones precancerosas cervicales (NIC III). Este grupo es critico para programas de deteccion temprana del cancer cervical.
 
 **Limitaciones de K=4:** Los clusters 0 y 2 solo se diferencian por edad. El cluster 1 mezcla TODA la patologia masculina sin distinguir entre cancer testicular (jovenes) y cancer de prostata (mayores).
 
@@ -94,7 +94,7 @@ Para la correcta interpretacion de los resultados, es fundamental entender que s
 | **4** | **Hombre** | **Prostata (C61.9)** | **Carcinoma escamoso (8070)** | **Adulto Mayor** | **7,866 (9.6%)** |
 
 **Nuevo cluster (4) -- Cancer de prostata en adultos mayores:**
-- 100% hombres, 97.6% mayores de 65 anos
+- 100% hombres, 97.6% mayores de 65 años
 - Topografia dominante: Prostata (15.3%), seguida de Rinon (5.1%) y Pulmon (4.9%)
 - Este cluster separa a los hombres de edad avanzada del cluster 1, que ahora es mas puro en cancer de hombres adultos jovenes
 
@@ -128,13 +128,13 @@ El avance mas importante es la **separacion de la patologia masculina por edad**
 **Nuevos hallazgos en K=6:**
 
 1. **Cluster 5 -- Cancer de mama con subtipo histologico especifico:**
-   - 99.5% mujeres, 88.3% adultas (45-65 anos)
+   - 99.5% mujeres, 88.3% adultas (45-65 años)
    - Topografia: Mama 84.2% concentrada, Cuadrante superior externo 7.3%
    - **Morfologia: Carcinoma Ductal Infiltrante (8500)** en lugar del Adenocarcinoma generico
    - Este es un hallazgo clinicamente relevante: el carcinoma ductal infiltrante es el subtipo mas comun y agresivo de cancer de mama. Identificarlo como grupo separado permite diferenciarlo de otros adenocarcinomas mamarios menos especificos.
 
 2. **Cluster 2 migra a Cuello uterino adultas:**
-   - 100% mujeres, 99.1% adultas (45-65 anos)
+   - 100% mujeres, 99.1% adultas (45-65 años)
    - Topografias: Cuello uterino (14.6%), Cervix (6.6%), Endometrio (5.0%)
    - Se separa del cluster 3 (NIC III en jovenes): **cluster 2 captura canceres cervicales invasivos en mujeres adultas**, mientras que cluster 3 sigue siendo lesiones precancerosas en jovenes.
 
@@ -160,7 +160,7 @@ Se logra una doble segmentacion importante:
 | **6** | **Hombre** | **Recto (C20.9)** | **Adenocarcinoma (8140)** | **Adulto** | **4,298 (5.2%)** |
 
 **Nuevo cluster (6) -- Cancer colorrectal masculino:**
-- 100% hombres, 95.9% adultos (45-65 anos)
+- 100% hombres, 95.9% adultos (45-65 años)
 - Topografias: Recto 21.0%, Colon 11.1%, Pulmon 9.3%
 - Morfologia: Adenocarcinoma (cancer glandular)
 - Este cluster captura un perfil que estaba diluido en el cluster general de hombres: **cancer del tracto digestivo bajo en hombres adultos**
@@ -207,7 +207,7 @@ Se logra una doble segmentacion importante:
 
 La reduccion de costo se **desacelera** progresivamente, lo cual es esperado: cada cluster adicional aporta menor ganancia en cohesion. El mayor salto ocurre de K=4 a K=5.
 
-### 4.2 Evolucion de los Tamanos de Cluster
+### 4.2 Evolucion de los Tamaños de Cluster
 
 | K | Tamano Min | Tamano Max | Promedio | Desviacion |
 |---|------------|------------|----------|------------|
@@ -218,7 +218,7 @@ La reduccion de costo se **desacelera** progresivamente, lo cual es esperado: ca
 
 Observaciones:
 - El cluster mas pequeno pasa de 12,920 (K=4) a 4,298 (K=7), pero sigue representando el **5.2% del total**, lo cual es estadisticamente robusto.
-- La desviacion estandar de los tamanos se mantiene relativamente estable, indicando que no hay fragmentacion desproporcionada.
+- La desviacion estandar de los tamaños se mantiene relativamente estable, indicando que no hay fragmentacion desproporcionada.
 
 ### 4.3 Mapa de Perfiles Descubiertos por K
 
@@ -260,8 +260,8 @@ Los experimentos demuestran que:
 1. **K=4 es valido pero conservador.** Captura los patrones mas gruesos (mama, testiculo, cuello uterino) pero mezcla subpoblaciones clinicamente distintas.
 
 2. **K=5 es la primera mejora significativa.** La separacion prostata/testiculo tiene alto impacto clinico:
-   - Cancer testicular: hombres 15-45 anos, tratamiento con cirugia + quimioterapia, alta tasa de curacion
-   - Cancer de prostata: hombres >65 anos, tratamiento con hormonoterapia + radioterapia, pronostico variable
+   - Cancer testicular: hombres 15-45 años, tratamiento con cirugia + quimioterapia, alta tasa de curacion
+   - Cancer de prostata: hombres >65 años, tratamiento con hormonoterapia + radioterapia, pronostico variable
 
 3. **K=6 revela subtipos histologicos.** El Carcinoma Ductal Infiltrante (8500) es el subtipo mas comun de cancer de mama y tiene protocolos de tratamiento especificos. Identificarlo como grupo separado es util para:
    - Planificacion de recursos hospitalarios
@@ -296,7 +296,7 @@ No existe un K "correcto" unico. La eleccion depende del **proposito**:
 | `rita_clusters_k5.csv` | Asignacion de cluster para cada paciente (K=5) |
 | `rita_clusters_k6.csv` | Asignacion de cluster para cada paciente (K=6) |
 | `rita_clusters_k7.csv` | Asignacion de cluster para cada paciente (K=7) |
-| `resumen_k_experimentos.json` | Costos, tamanos y centroides en formato JSON |
+| `resumen_k_experimentos.json` | Costos, tamaños y centroides en formato JSON |
 | `figures/rita_cluster_geometry_k{K}.png` | Visualizacion PCA y t-SNE de los clusteres |
 | `figures/rita_radar_profiles_k{K}.png` | Perfiles radar por cluster |
 | `figures/rita_demographic_breakdown_k{K}.png` | Composicion demografica por cluster |

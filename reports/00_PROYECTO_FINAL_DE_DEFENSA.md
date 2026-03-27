@@ -4,8 +4,8 @@
 
 ### Aplicacion de Tecnicas de Machine Learning No Supervisado
 
-**Materia:** Machine Learning  
-**Universidad Nacional de San Agustin (UNSA)**
+**Materia:** Introducción a Machine Learning  
+**Universidad Nacional de Salta (UNSA)**
 
 ---
 
@@ -74,8 +74,8 @@ El dataset RITA no contiene una **variable objetivo natural** que permita formul
 |--------|--------|----------------|
 | C50.9 | Mama | Cancer mas frecuente en mujeres |
 | C53.9 | Cuello uterino (cervix) | Asociado a VPH |
-| C62.9 | Testiculo | Frecuente en hombres 15-45 anos |
-| C61.9 | Prostata | Predominante en hombres >65 anos |
+| C62.9 | Testiculo | Frecuente en hombres 15-45 años |
+| C61.9 | Prostata | Predominante en hombres >65 años |
 | C20.9 | Recto | Parte del cancer colorrectal |
 | C34.9 | Pulmon | Asociado a tabaquismo |
 
@@ -113,22 +113,22 @@ La fraccion de valores nulos es minima respecto al total de 82,106 registros. Se
 
 Se aplico el metodo del **Rango Intercuartilico (IQR)** sobre la variable `EDAD_DIAGNOSTICO`:
 
-- **Q1:** 44 anos
-- **Q3:** 66 anos
-- **IQR:** 22 anos
-- **Limite inferior:** 44 - 1.5 * 22 = 11 anos
-- **Limite superior:** 66 + 1.5 * 22 = 99 anos
+- **Q1:** 44 años
+- **Q3:** 66 años
+- **IQR:** 22 años
+- **Limite inferior:** 44 - 1.5 * 22 = 11 años
+- **Limite superior:** 66 + 1.5 * 22 = 99 años
 
-Se detecto 1 valor atipico extremo (edad > 100 anos). Aunque es biologicamente posible, se identifico y registro para evitar que sesgara los promedios.
+Se detecto 1 valor atipico extremo (edad > 100 años). Aunque es biologicamente posible, se identifico y registro para evitar que sesgara los promedios.
 
 ### 3.4 Recodificacion de Variables
 
 - **Sexo:** Se creo la columna `SEXO_NUM` mapeando `Hombre -> 0` y `Mujer -> 1`.
 - **Edad discretizada:** Se creo `EDAD_RANGO` con 4 categorias:
-  - Infantil-Juvenil (0-18 anos)
-  - Adulto Joven (18-45 anos)
-  - Adulto (45-65 anos)
-  - Adulto Mayor (65+ anos)
+  - Infantil-Juvenil (0-18 años)
+  - Adulto Joven (18-45 años)
+  - Adulto (45-65 años)
+  - Adulto Mayor (65+ años)
 
 ### 3.5 Dataset Generado
 
@@ -145,9 +145,9 @@ El proceso concluyo con la generacion de `data/processed/rita_limpio.csv`, que s
 | Metrica | Valor |
 |---------|-------|
 | Total de registros | 82,106 |
-| Edad promedio | 55.08 anos |
-| Edad mediana | 57 anos |
-| Desviacion estandar | 15.45 anos |
+| Edad promedio | 55.08 años |
+| Edad mediana | 57 años |
+| Desviacion estandar | 15.45 años |
 | Proporcion mujeres | 59.8% |
 | Proporcion hombres | 40.2% |
 
@@ -155,8 +155,8 @@ El proceso concluyo con la generacion de `data/processed/rita_limpio.csv`, que s
 
 | Sexo | Edad Promedio | Mediana |
 |------|---------------|---------|
-| Hombres | 57.9 anos | 60 anos |
-| Mujeres | 53.1 anos | 54 anos |
+| Hombres | 57.9 años | 60 años |
+| Mujeres | 53.1 años | 54 años |
 
 Las mujeres tienden a ser diagnosticadas a una edad mas temprana que los hombres, lo cual se explica por la alta incidencia del cancer de mama y las lesiones cervicales precancerosas (NIC III) que se detectan en edades tempranas mediante programas de screening.
 
@@ -166,7 +166,7 @@ Las mujeres tienden a ser diagnosticadas a una edad mas temprana que los hombres
 
 ![Distribucion de Edad](figures/01_histograma_edad.png)
 
-*Figura 1: Distribucion de la edad de diagnostico. Se observa una distribucion asimetrica hacia la derecha con pico entre 55 y 65 anos.*
+*Figura 1: Distribucion de la edad de diagnostico. Se observa una distribucion asimetrica hacia la derecha con pico entre 55 y 65 años.*
 
 **Matriz de Correlacion:**
 
@@ -177,7 +177,7 @@ Las mujeres tienden a ser diagnosticadas a una edad mas temprana que los hombres
 ### 4.4 Conclusiones del EDA
 
 1. La poblacion oncologica tiene un sesgo hacia el sexo femenino (60/40), lo que debe considerarse en cualquier modelo.
-2. La edad de diagnostico varia significativamente segun el organo afectado (40 anos para ciertos tumores vs 70+ para otros).
+2. La edad de diagnostico varia significativamente segun el organo afectado (40 años para ciertos tumores vs 70+ para otros).
 3. La ausencia de correlaciones lineales fuertes indica que los modelos basados en arboles o clustering son mas apropiados que modelos lineales.
 
 ---
@@ -232,13 +232,13 @@ El modelo segmento a los 82,106 pacientes en 4 perfiles predominantes:
 
 ### 5.5 Interpretacion Clinica de los Clusters
 
-- **Cluster 0 - Mujeres adultas mayores con cancer de mama:** El grupo mas numeroso. Refleja la alta incidencia del cancer de mama en mujeres mayores de 65 anos, consistente con la epidemiologia conocida.
+- **Cluster 0 - Mujeres adultas mayores con cancer de mama:** El grupo mas numeroso. Refleja la alta incidencia del cancer de mama en mujeres mayores de 65 años, consistente con la epidemiologia conocida.
 
-- **Cluster 1 - Hombres adultos (heterogeneo):** Agrupa toda la poblacion masculina adulta (45-65 anos). Aunque la moda es testiculo, este cluster mezcla patologias diversas (testiculo, pulmon, colon, prostata). Es el cluster mas heterogeneo.
+- **Cluster 1 - Hombres adultos (heterogeneo):** Agrupa toda la poblacion masculina adulta (45-65 años). Aunque la moda es testiculo, este cluster mezcla patologias diversas (testiculo, pulmon, colon, prostata). Es el cluster mas heterogeneo.
 
-- **Cluster 2 - Mujeres adultas con cancer de mama:** Similar al cluster 0 pero en un rango de edad mas joven (45-65 anos). Permite diferenciar perfiles epidemiologicos por edad dentro del mismo tipo de cancer.
+- **Cluster 2 - Mujeres adultas con cancer de mama:** Similar al cluster 0 pero en un rango de edad mas joven (45-65 años). Permite diferenciar perfiles epidemiologicos por edad dentro del mismo tipo de cancer.
 
-- **Cluster 3 - Mujeres jovenes con lesiones cervicales precancerosas:** Mujeres de 18-45 anos con NIC III (neoplasia intraepitelial cervical grado III). Este grupo es critico para politicas de prevencion temprana y programas de vacunacion contra VPH.
+- **Cluster 3 - Mujeres jovenes con lesiones cervicales precancerosas:** Mujeres de 18-45 años con NIC III (neoplasia intraepitelial cervical grado III). Este grupo es critico para politicas de prevencion temprana y programas de vacunacion contra VPH.
 
 ---
 
@@ -263,10 +263,10 @@ La reduccion del costo se **desacelera progresivamente**, lo cual es esperado: c
 
 #### K=5: Separacion de la patologia masculina por edad
 
-El avance mas importante es la aparicion de un cluster dedicado al **cancer de prostata en adultos mayores** (100% hombres, 97.6% mayores de 65 anos). Esto separa la patologia masculina en dos perfiles clinicamente distintos:
+El avance mas importante es la aparicion de un cluster dedicado al **cancer de prostata en adultos mayores** (100% hombres, 97.6% mayores de 65 años). Esto separa la patologia masculina en dos perfiles clinicamente distintos:
 
 - **Cancer testicular** (hombres jovenes-adultos): tratamiento con cirugia + quimioterapia, alta tasa de curacion.
-- **Cancer de prostata** (hombres >65 anos): tratamiento con hormonoterapia + radioterapia, pronostico variable.
+- **Cancer de prostata** (hombres >65 años): tratamiento con hormonoterapia + radioterapia, pronostico variable.
 
 Esta distincion es clinicamente fundamental porque tienen perfiles de riesgo, tratamientos y pronosticos completamente diferentes.
 
@@ -280,7 +280,7 @@ Se logra una doble segmentacion:
 
 #### K=7: Cancer colorrectal como grupo emergente
 
-Aparece un cluster dedicado al **cancer colorrectal masculino** (100% hombres, 95.9% adultos 45-65 anos), con topografias de recto (21%) y colon (11.1%). Este es uno de los canceres mas frecuentes a nivel mundial y su aparicion como cluster separado confirma su relevancia epidemiologica.
+Aparece un cluster dedicado al **cancer colorrectal masculino** (100% hombres, 95.9% adultos 45-65 años), con topografias de recto (21%) y colon (11.1%). Este es uno de los canceres mas frecuentes a nivel mundial y su aparicion como cluster separado confirma su relevancia epidemiologica.
 
 ### 6.3 Mapa de Perfiles Descubiertos por K
 
@@ -339,7 +339,7 @@ El dataset NO contiene:
 - **Supervivencia** (si el paciente sobrevivio o no)
 - **Respuesta al tratamiento** (remision, progresion, recaida)
 - **Estadio del tumor** al momento del diagnostico (I, II, III, IV)
-- **Tiempo de sobrevida** (meses/anos desde el diagnostico)
+- **Tiempo de sobrevida** (meses/años desde el diagnostico)
 - **Tipo de tratamiento recibido** (cirugia, quimioterapia, radioterapia)
 - **Estado actual del paciente** (vivo, fallecido, en tratamiento)
 
@@ -483,4 +483,4 @@ El proyecto sigue la metodologia CRISP-DM (Cross-Industry Standard Process for D
 
 ---
 
-*Proyecto desarrollado para la materia de Machine Learning - Universidad Nacional de Salta (UNSA)*
+*Proyecto desarrollado para la materia de Introducción a Machine Learning - Universidad Nacional de Salta (UNSA)*

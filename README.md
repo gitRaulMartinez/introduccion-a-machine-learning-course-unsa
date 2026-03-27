@@ -2,8 +2,8 @@
 
 ## Aplicacion de Tecnicas de Machine Learning No Supervisado
 
-**Materia:** Machine Learning  
-**Universidad Nacional de San Agustin (UNSA)**
+**Materia:** Introducción a Machine Learning  
+**Universidad Nacional de Salta (UNSA)**
 
 ---
 
@@ -81,9 +81,9 @@ Se realizo la limpieza del dataset original de 82,106 registros:
 | Metrica | Valor |
 |---------|-------|
 | Total de registros | 82,106 |
-| Edad promedio | 55.08 anos |
-| Edad mediana | 57 anos |
-| Desviacion estandar | 15.45 anos |
+| Edad promedio | 55.08 años |
+| Edad mediana | 57 años |
+| Desviacion estandar | 15.45 años |
 | Proporcion mujeres | 59.8% |
 | Proporcion hombres | 40.2% |
 
@@ -91,8 +91,8 @@ Se realizo la limpieza del dataset original de 82,106 registros:
 
 | Sexo | Edad Promedio | Mediana |
 |------|---------------|---------|
-| Hombres | 57.9 anos | 60 anos |
-| Mujeres | 53.1 anos | 54 anos |
+| Hombres | 57.9 años | 60 años |
+| Mujeres | 53.1 años | 54 años |
 
 Las mujeres tienden a ser diagnosticadas a una edad mas temprana, explicado por la alta incidencia del cancer de mama y las lesiones cervicales precancerosas (NIC III) detectadas en edades tempranas mediante programas de screening.
 
@@ -100,7 +100,7 @@ Las mujeres tienden a ser diagnosticadas a una edad mas temprana, explicado por 
 
 ![Distribucion de Edad](reports/figures/01_histograma_edad.png)
 
-*Figura 1: Distribucion de la edad de diagnostico. Se observa una distribucion asimetrica hacia la derecha con pico entre 55 y 65 anos.*
+*Figura 1: Distribucion de la edad de diagnostico. Se observa una distribucion asimetrica hacia la derecha con pico entre 55 y 65 años.*
 
 ### Matriz de Correlacion
 
@@ -161,7 +161,7 @@ Las variables principales (sexo, topografia, morfologia) son **categoricas**. K-
 
 ### K=5: Separacion de patologia masculina por edad
 
-Se descubre un cluster de **cancer de prostata en adultos mayores** (100% hombres, 97.6% >65 anos), separando la patologia masculina en dos perfiles clinicamente distintos: cancer testicular (jovenes) vs cancer de prostata (mayores).
+Se descubre un cluster de **cancer de prostata en adultos mayores** (100% hombres, 97.6% >65 años), separando la patologia masculina en dos perfiles clinicamente distintos: cancer testicular (jovenes) vs cancer de prostata (mayores).
 
 #### Visualizaciones K=5
 
@@ -342,4 +342,4 @@ La prediccion del sexo presenta **circularidad biologica**: la topografia del tu
 
 ---
 
-*Proyecto desarrollado para la materia de Machine Learning - Universidad Nacional de Salta (UNSA)*
+*Proyecto desarrollado para la materia de Introducción a Machine Learning - Universidad Nacional de Salta (UNSA)*
