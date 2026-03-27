@@ -342,4 +342,4 @@ La prediccion del sexo presenta **circularidad biologica**: la topografia del tu
 
 ---
 
-*Proyecto desarrollado para la materia de Machine Learning - Universidad Nacional de San Agustin (UNSA)*
+*Proyecto desarrollado para la materia de Machine Learning - Universidad Nacional de Salta (UNSA)*
