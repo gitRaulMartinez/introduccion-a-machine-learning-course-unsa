@@ -4,11 +4,11 @@ Este repositorio contiene la estructura base para un análisis estadístico y mo
 
 ## Estructura del Proyecto
 
-- `data/raw/rita/` y `data/raw/students/`: datos originales por dataset.
-- `data/processed/rita/` y `data/processed/students/`: datos procesados por dataset.
-- `notebooks/rita/` y `notebooks/students/`: notebooks separados por proyecto.
-- `reports/rita/` y `reports/students/`: reportes y figuras separados por proyecto.
-- `models/rita/` y `models/students/`: modelos entrenados por dataset.
+- `data/raw/`: datos originales.
+- `data/processed/`: datos procesados.
+- `notebooks/`: notebooks del proyecto.
+- `reports/`: reportes y figuras.
+- `models/`: modelos entrenados.
 - `src/`: código fuente modular reutilizable.
 - `GEMINI.md`: guía de prompts y mandatos para trabajar conmigo.
 
